@@ -44,6 +44,7 @@ const ListeDeFilms = () => {
                 <div className="liste-de-films grid grid-cols-3 gap-x-[1%] gap-y-8 ml-[auto] ">
                     {item.map((descr) => (
                         <div key={descr.id} >
+                        {/*lien qui permet de regarder le trailer du film*/}
                         <Link to={`descr/${descr.id}`} > 
                         <FilmCard {...descr} />
                         </Link>
