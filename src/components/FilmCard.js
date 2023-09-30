@@ -8,7 +8,6 @@ const FilmCard = ({ titre, description, poste, note}) => {
       </div>
       <div class="p-6">
         <div class="mb-2 flex items-center justify-between">
-          
             <h1 class="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
               Title:{titre}
             </h1>

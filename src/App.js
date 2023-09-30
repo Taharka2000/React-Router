@@ -8,8 +8,11 @@ function App() {
    <>
     <div className="App">
     </div>
+    {/*pour la navigation entre chaque page du site*/}
     <Routes >
+      {/*naviger a l'acceuil du page*/}
        <Route path='/' element={<ListeDeFilms/>}/>
+       {/* naviger au details de film */}
       <Route path='/descr/:id'element={<DetailsFilm/>}/>
     </Routes>
    </>

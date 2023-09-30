@@ -3,10 +3,12 @@ import Movie from './MovieList'
 import { Link, useParams } from 'react-router-dom'
 import { FaHome  } from "react-icons/fa";
 function DetailsFilm() {
-const {id}=useParams()
-const descr=Movie.find((m)=>m.id===id)
+  
+const {id}=useParams();{/*utilisation de useparams pour pouvoir recuperer l'id de chaque film*/}
+const descr=Movie.find((m)=>m.id===id);{/*utilasation de la methode find pour pouvoir trouver l'id de chaque film*/}
 return (
     <>
+    {/*utilisation du link de react router pour pouvoir retourner a l'acceuil*/}
     <div className='flex flex-col items-center '>
     <Link to="/">
   <a href="" class="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50">
@@ -17,6 +19,7 @@ return (
     <span class="relative flex items-center"> <FaHome class="mr-2" /> Home </span>
   </a>
 </Link>
+{/*affichage du trailer et du description pour les films*/}
     </div>
     <div className='flex flex-col items-center  '>
       <h1 className='font-serif text-xl text-center font-semibold'>Trailer</h1>
